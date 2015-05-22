@@ -2,6 +2,7 @@
   :description "Clojure NetworkInterface. java.net.NetworkInterface class wrapper."
   :url "https://github.com/notvitor/clojure-networkinterface"
   :license {:name "The MIT License (MIT)"}
+  :min-lein-version "2.5.1"
   :dependencies [[org.clojure/clojure "1.6.0"]]
   :source-paths ["src/clojure"]
   :java-source-paths ["src/java"]
