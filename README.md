@@ -40,10 +40,9 @@ Check if network interface is a loopback interface with:
 
 
 For more examples and full documentation check the link below.
+- [NetworkInterface](https://docs.oracle.com/javase/7/docs/api/java/net/NetworkInterface.html).
 
-##Reference and Doc:
 
-[NetworkInterface](https://docs.oracle.com/javase/7/docs/api/java/net/NetworkInterface.html).
 ---
 
 Have a request, suggestion or question?
