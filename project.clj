@@ -3,7 +3,9 @@
   :url "https://github.com/notvitor/clojure-networkinterface"
   :license {:name "The MIT License (MIT)"}
   :min-lein-version "2.5.1"
+  :test-selectors {:default (fn [v] (not (:time-consuming v))),
+                   :time-consuming (fn [v] (:time-consuming v)),
+                   :focus (fn [v] (:focus v)),
+                   :all (fn [_] true)}
   :dependencies [[org.clojure/clojure "1.6.0"]]
-  :source-paths ["src/clojure"]
-  :java-source-paths ["src/java"]
-  :javac-options     ["-target" "1.6" "-source" "1.6"])
+  :warn-on-reflection false)
