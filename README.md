@@ -5,8 +5,6 @@ clojure-networkinterface
 
 Clojure NetworkInterface. java.net.NetworkInterface class wrapper.
 
-Reference and Doc: [NetworkInterface](https://docs.oracle.com/javase/7/docs/api/java/net/NetworkInterface.html).
-
 
 ## Usage
 
@@ -15,17 +13,17 @@ Get network interface by name:
     => (by-name "eth3")
     #<NetworkInterface name:eth3 (Intel(R) 82579LM Gigabit Network Connection)>
 
-Get list of Nnetwork interfaces as Enumeration<NetworkInterface> with:
+Get list of network interfaces as an Enumeration<NetworkInterface> with:
 
     => (network-interfaces)
     #<java.net.NetworkInterface$2@1f1b62ff>
 
-Get list of network interfaces as EnumerationSeq with:
+Get list of network interfaces as an EnumerationSeq with:
 
     => (network-interfaces :opts)
     #(#<NetworkInterface name:lo (Software Loopback Interface 1)> #<NetworkInterface name:net0 (WAN Miniport (SSTP))>...#<NetworkInterface name:eth3          (Intel(R) 82579LM Gigabit Network Connection)> #<NetworkInterface name:wlan0 (Dell Wireless 1504 802.11b/g/n (2.4GHz))>...
 
-Get the Inet Addresses of the network interface as EnumerationSeq with:
+Get the Inet Addresses from network interface as an EnumerationSeq with:
 
     => (inet-addresses (by-name "wlan0") :ips)
     #(#<Inet4Address /192.168.100.3> #<Inet6Address /fe80:0:0:0:c52d:8f2f:2bfc:f120%wlan0>)
@@ -40,6 +38,10 @@ Check if network interface is a loopback interface with:
     => (loopback? (by-name "lo"))
     true
 
+
+For more examples and full documentation check the link below.
+
+Reference and Doc: [NetworkInterface](https://docs.oracle.com/javase/7/docs/api/java/net/NetworkInterface.html).
 ---
 
 Have a request, suggestion or question?
