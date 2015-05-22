@@ -1,5 +1,5 @@
-#clojure-networkinterface
-
+clojure-networkinterface
+--------------
 
 Clojure NetworkInterface. java.net.NetworkInterface class wrapper.
 
