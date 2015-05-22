@@ -32,5 +32,6 @@
     (is (or (true? (instance? java.util.Enumeration (subinterfaces nic))) nil?))
     (is (or (true? (instance? clojure.lang.EnumerationSeq (subinterfaces nic))) nil?))))
 
+;; Tests ok locally but to be avoided in Travis-CI
 ;;     (is (true? (instance? (type (byte-array 10)) (hardware-address nic))))
 ;;     (is (true? (instance? String (hardware-address nic :formatted))))
