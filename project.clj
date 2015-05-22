@@ -2,7 +2,7 @@
   :description "Clojure NetworkInterface. java.net.NetworkInterface class wrapper."
   :url "https://github.com/notvitor/clojure-networkinterface"
   :license {:name "The MIT License (MIT)"}
-  :min-lein-version "2.5.1"
+  :min-lein-version "2.0.0"
   :test-selectors {:default (fn [v] (not (:time-consuming v))),
                    :time-consuming (fn [v] (:time-consuming v)),
                    :focus (fn [v] (:focus v)),
